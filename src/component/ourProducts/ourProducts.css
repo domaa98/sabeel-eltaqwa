@@ -52,6 +52,12 @@
     border-radius: 8px;
     background-color: #EFF2F5;
   }
+
+  .ourProductsSection .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   
   .ourProductsSection .card-content h3 {
     margin-top: 10px;
@@ -63,7 +69,7 @@
     margin: 10px 0;
   }
   
-  .ourProductsSection .card-content button {
+  .ourProductsSection .card-content a {
     padding: 8px 16px;
     margin-top: 15px;
     background-color: #fff;
@@ -74,11 +80,13 @@
     transition: ease-in-out 0.2s;
   }
   
-  .ourProductsSection .card-content button:hover {
+  .ourProductsSection .card-content a:hover {
     background-color: #0056b3;
     color: #fff;
     transition: ease-in-out 0.2s;
   }
+
+ 
   
   
   /* Mobile Devices */

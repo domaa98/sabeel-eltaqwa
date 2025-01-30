@@ -60,6 +60,7 @@
  .blogSection .card-content p {
     font-size: 14px;
     margin: 10px 0;
+    line-height: 1.5;
   }
   
   .blogSection .card-content button {
@@ -82,6 +83,10 @@
   
   /* Mobile Devices */
   @media (max-width: 600px) {
+    .blogSection {
+      height: 1200px;
+      margin: 0 80px;
+    }
     .blogSection .top-section {
       flex-direction: row-reverse;
       align-items: flex-start;

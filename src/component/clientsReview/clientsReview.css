@@ -42,10 +42,11 @@
     flex-direction: row-reverse;
     text-align: right;
     border-radius: 10px;
-    width: 415px;
+    width: fit-content;
     height: 125px;
     gap: 14px;
     background-color: #F2F4F7;
+    padding: 8px;
    /* margin: 0 10px;*/
   }
  
@@ -80,6 +81,7 @@
     font-weight: 400;
     margin: 10px 0;
     width: 220px;
+    line-height: 1.5;
   }
   
   .ourClientsReview .card-content button {
@@ -99,6 +101,16 @@
     transition: ease-in-out 0.2s;
   }
   
+
+  @media (max-width: 450px) {
+    .ourClientsReview {
+      margin: 20px 30px;
+    }
+    .ourClientsReview .card-content .rate .clientRate {
+      color: rgb(213, 213, 6);
+      font-size: 12px;
+  }
+  }
   
   /* Mobile Devices */
   @media (max-width: 600px) {
@@ -137,11 +149,12 @@
     }
   
     .ourClientsReview .card {
-      width: 100%;
+      width: fit-content;
       margin-bottom: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 8px;
     }
     .ourClientsReview .card .card-image {
       width: 90px;
@@ -168,9 +181,10 @@
     
       .ourClientsReview .card {
         display: flex ;
-        width: 350px;
+        width: fit-content;
         align-items: center;
         justify-content: center;
+        padding: 8px;
       }
     
       .ourClientsReview .buttons {
@@ -206,9 +220,10 @@
     
       .ourClientsReview .card {
         display: flex ;
-        width: 350px;
+        width: fit-content;
         align-items: center;
         justify-content: center;
+        padding: 8px;
       }
     
       .ourClientsReview .buttons {
@@ -239,14 +254,15 @@
       height: 330px;
     }
     .ourClientsReview .slider {
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
   
     .ourClientsReview .card {
       display: flex ;
-      width: 350px;
+      width: fit-content;
       align-items: center;
       justify-content: center; 
+      padding: 8px;
     }
   
     .ourClientsReview .buttons {

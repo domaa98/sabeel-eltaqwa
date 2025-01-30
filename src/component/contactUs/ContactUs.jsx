@@ -15,9 +15,11 @@ const ContactUs = () => {
 
 
   return (
-    <>
+    <div className='formContainer'>
     <h2 className='contactTitle'>تواصل معنا</h2>
+
     <div className="containerr" id='Contact_us'>
+      
       <div className="section image-section">
         <img
           src={map}
@@ -26,6 +28,7 @@ const ContactUs = () => {
         />
       </div>
       <div className="section form-section">
+
         <p className='first-title'>لسهولة الاتصال الفوري مع المؤسسة</p>
         <p className='second-title'>تواصل معنا لمعرفة كيف يمكننا أن نكون جزءًا من نجاحك</p>
         <form ref={form} onSubmit={handleSubmit} className='contactForm'>
@@ -65,7 +68,7 @@ const ContactUs = () => {
         </form>
       </div>
     </div>
-    </>
+    </div>
     
   )
 }

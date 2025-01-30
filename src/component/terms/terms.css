@@ -1,0 +1,36 @@
+.terms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin: 0 80px;
+  }
+  
+  .left-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    transition: color 0.3s;
+    pointer-events: none;
+  }
+  
+  .left-links a:hover {
+    color: #000;
+  }
+  
+ 
+  @media (max-width: 570px) {
+    .terms{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+      }
+  }

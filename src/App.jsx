@@ -7,6 +7,7 @@ import Header from "./component/header/Header";
 import Identity from "./component/identity/Identity";
 import OurProducts from "./component/ourProducts/OurProducts";
 import OurServices from "./component/ourServices/OurServices";
+import Terms from "./component/terms/Terms";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <Blog />
     <ContactUs />
     <Footer />
+    <Terms />
     </>
   )
 }
