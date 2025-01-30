@@ -1,0 +1,259 @@
+.ourClientsReview {
+    height: 275px;
+    margin: 30px 80px;
+  }
+  
+  .ourClientsReview .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-bottom: 30px;
+ 
+  }
+  
+  .ourClientsReview .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .ourClientsReview .buttons button {
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    background-color: #2071B9;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  .ourClientsReview .slider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .ourClientsReview .card {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    border-radius: 10px;
+    width: 415px;
+    height: 125px;
+    gap: 14px;
+    background-color: #F2F4F7;
+   /* margin: 0 10px;*/
+  }
+ 
+  .ourClientsReview .card .card-image {
+    width: 118px;
+    height: 110px;
+    object-fit: cover; 
+    border-radius: 8px;
+    background-color: #EFF2F5;
+  }
+
+  .ourClientsReview .card-content .rate{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .ourClientsReview .card-content .rate .clientName{
+    font-size: 20;
+    font-weight: 700;
+  }
+  .ourClientsReview .card-content .rate .clientRate{
+     color: rgb(213, 213, 6);
+  }
+  
+  .ourClientsReview .card-content h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+ .ourClientsReview .card-content p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0;
+    width: 220px;
+  }
+  
+  .ourClientsReview .card-content button {
+    padding: 8px 16px;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #2071B9;
+    border: 1px solid #2071B9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .ourClientsReview .card-content button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transition: ease-in-out 0.2s;
+  }
+  
+  
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    .ourClientsReview {
+      height: 530px;
+    }
+    .ourClientsReview .top-section {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  
+    .ourClientsReview .title {
+      font-size: 20px;
+    }
+  
+    .ourClientsReview .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 74px;      
+    }
+  
+    .ourClientsReview .buttons button {
+        height: 32px;
+        width: 32px;
+        border-radius: 4px;
+        background-color: #2071B9;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+  
+    .ourClientsReview .slider {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ourClientsReview .card {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ourClientsReview .card .card-image {
+      width: 90px;
+      height: 100px;
+    }
+    .ourClientsReview .card-content p {
+      font-size: 13px;
+      width: 150px;
+  }
+  ourClientsReview .card-content .rate {
+    flex-direction: column;
+}
+  }
+  
+  /* Tablets */
+  @media (min-width: 906px) and (max-width: 1024px) {
+    .ourClientsReview {
+      height: 330px;
+    }
+    .ourClientsReview .slider {
+      align-items: center;
+      justify-content: center;
+      }
+    
+      .ourClientsReview .card {
+        display: flex ;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .ourClientsReview .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 74px;
+      
+      }
+      .ourClientsReview .buttons button {
+        height: 32px;
+        width: 32px;
+        border-radius: 4px;
+        background-color: #2071B9;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      .ourClientsReview .card .card-image {
+        width: 100px;
+        height: 90px;
+      }
+  }
+
+  @media (min-width: 601px) and (max-width: 906px) {
+    .ourClientsReview {
+      height: 500px;
+    }
+    .ourClientsReview .slider {
+      align-items: center;
+      justify-content: center;
+      }
+    
+      .ourClientsReview .card {
+        display: flex ;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .ourClientsReview .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 74px;
+      
+      }
+      .ourClientsReview .buttons button {
+        height: 32px;
+        width: 32px;
+        border-radius: 4px;
+        background-color: #2071B9;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      .ourClientsReview .card .card-image {
+        width: 100px;
+        height: 90px;
+      }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) {
+    .ourClientsReview {
+      height: 330px;
+    }
+    .ourClientsReview .slider {
+      flex-direction: row;
+    }
+  
+    .ourClientsReview .card {
+      display: flex ;
+      width: 350px;
+      align-items: center;
+      justify-content: center; 
+    }
+  
+    .ourClientsReview .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 74px;
+    }
+  }
+  
+  

@@ -1,0 +1,167 @@
+.contactTitle{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 90px;
+
+}
+.containerr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 80px;
+  }
+  
+  .section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    height: 520px;
+    width: 660px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section p{
+    direction: rtl;
+  }
+
+  .form-section .first-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .form-section .second-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 15px;
+  }
+  textarea{
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 15px;    
+    background-color: #2071B9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+/* Styles for medium devices (tablets) */
+@media (min-width: 780px) and (max-width: 950px) {
+    .form-section .first-title{
+    font-size: 23px;
+  }
+  .form-section .second-title{
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 18px;
+}
+}
+
+
+@media (min-width: 555px) and (max-width: 779px) {
+    .form-section .first-title{
+        font-size: 20px;
+      }
+      .form-section .second-title{
+        font-size: 16px;
+      }
+    
+      label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 601px) {
+   
+    .contactTitle{
+        margin-top: 800px;
+    }
+}
+
+
+@media (max-width: 555px) {
+    .containerr {
+       flex-direction: column;
+       width: 80%;
+       padding: 20px 0;
+      }
+
+      .containerr .image-section {
+        width: 80%;
+        margin: 0;
+       }
+       .containerr .section-image {
+        width: 80%;
+       }
+
+      .form-section .first-title{
+        font-size: 18px;
+      }
+      .form-section .second-title{
+        font-size: 14px;
+      }
+    
+      label {
+        font-size: 14px;
+    }
+    .section-image {
+        
+        height: 300px;
+      }
+}
