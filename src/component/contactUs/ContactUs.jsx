@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 import './contact.css'
 import map from '../../assets/map.png'
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 
 const ContactUs = () => {
@@ -10,7 +12,27 @@ const ContactUs = () => {
       const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', form);
-        e.target.reset();
+
+      emailjs
+      .sendForm('service_nllz1iv', 'template_t9bj07h', form.current, {
+        publicKey: 'K4R4vwAFyIy2Fe2CZ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your message sent successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset();
       };
 
 
