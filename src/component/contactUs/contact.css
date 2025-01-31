@@ -127,18 +127,6 @@
     }
 }
 
-/*@media (max-width: 601px) {
-   
-  .containerr {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 50px;
-  }
-
-}*/
-
 
 @media (max-width: 601px) {
     .containerr {
@@ -147,9 +135,12 @@
        padding: 20px 0;
        margin: 0;
       }
+      .formContainer .contactTitle{
+        margin: 10px 40px;
+      }
 
       .containerr .image-section {
-        width: 80%;
+        width: 100%;
         margin: 0;
        }
        .containerr .section-image {

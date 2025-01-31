@@ -15,7 +15,7 @@
   }
   
   .ourProductsSection .title {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
   }
   
@@ -33,7 +33,7 @@
   
   .ourProductsSection .slider {
     display: flex;
-   /* justify-content: space-between;
+    /*justify-content: space-between;
     flex-wrap: wrap;*/
     /*gap: 20px; /* Add gap between cards */
   }
@@ -67,6 +67,7 @@
  .ourProductsSection .card-content p {
     font-size: 14px;
     margin: 10px 0;
+    line-height: 1.5;
   }
   
   .ourProductsSection .card-content a {
@@ -91,6 +92,10 @@
   
   /* Mobile Devices */
   @media (max-width: 600px) {
+
+    .ourProductsSection {
+      margin: 0 40px;
+    }
     .ourProductsSection .top-section {
       flex-direction: row-reverse;
       align-items: flex-start;
