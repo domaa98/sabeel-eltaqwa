@@ -45,11 +45,11 @@ const Header = () => {
         {openMenu ? (
           <div className="links-drop-down">
 
-            <a href="#Home">الرئيسية</a>
-            <a href="#Services">من نحن</a>
-            <a href="#About_us">منتجاتنا</a>
-            <a href="#Contact_us">خدماتنا</a>
-            <a href="#Contact_us">المدونة</a>
+            <a href="#main">الرئيسية</a>
+            <a href="#who">من نحن</a>
+            <a href="#products">منتجاتنا</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#blog">المدونة</a>
 
           </div>
         ) : null}

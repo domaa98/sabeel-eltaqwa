@@ -67,6 +67,9 @@ const OurProducts = () => {
 
     const visibleCards = cards.slice(currentIndex, currentIndex + cardsPerSlide);
 
+
+   
+
   return (
     <div className="ourProductsSection" id="products">
     <div className="top-section">

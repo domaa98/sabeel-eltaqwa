@@ -1,9 +1,9 @@
 
 import { useState } from "react";
 import './clientsReview.css'
-/*import client1 from '../../assets/client1.jpg'*/
+import client5 from '../../assets/photo5.png'
 import client2 from '../../assets/client2.jpg'
-import client3 from '../../assets/client3.jpg'
+import photo7 from '../../assets/photo7.png'
 import { FaArrowLeftLong, FaArrowRight } from 'react-icons/fa6';
 import { FaStar } from "react-icons/fa6";
 
@@ -11,8 +11,8 @@ import { FaStar } from "react-icons/fa6";
 const clients = [
     {
       id: 1,
-      image: client2,
-      name: 'محمد السيد',
+      image: client5,
+      name: 'ندي احمد',
       description: 'تجربتي كانت ممتازة! الطلب وصل سريعًا، وكل شيء كان بجودة عالية. بالتأكيد سأطلب مرة أخرى.',
     },
     {
@@ -23,8 +23,8 @@ const clients = [
     },
     {
       id: 3,
-      image: client3,
-      name: 'محمد السيد',
+      image: photo7,
+      name: 'فاروق',
       description: 'الخدمة ممتازة، والتوصيل سريع. أحببت العناية بالتفاصيل وجودة المنتجات. شكراً لكم!',
     },
     

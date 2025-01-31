@@ -158,9 +158,10 @@ a {
       justify-content: space-between;
       padding: 50px 0;
       height: 400px;
-      background-color: royalblue;
+      background-color: white;
       z-index: 100;
-    }
+      top: 95px;
+  }
     .links-drop-down a{
       width: 150px;
       padding: 8px 15px;
@@ -170,7 +171,7 @@ a {
 
     }
     .links-drop-down a:hover{
-      background-color: rgba(29, 27, 27, 0.192);
+      background-color: rgb(0, 0, 0);
       color: #fff;
       width: 150px;
       text-align: center;
