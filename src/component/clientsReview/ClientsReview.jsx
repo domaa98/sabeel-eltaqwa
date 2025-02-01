@@ -54,12 +54,19 @@ const ClientsReview = () => {
    <div className="ourClientsReview">
        <div className="top-section">
          <div className="title">شهادات العملاء</div>
-         <div className="buttons">
-           <button onClick={prevSlide}><FaArrowLeftLong />
-           </button>
-           <button onClick={nextSlide}> <FaArrowRight />
-           </button>
-         </div>
+         {clients.length > cardsPerSlide && (
+          <div className="buttons">
+            <button onClick={prevSlide} disabled={currentIndex === 0}>
+              <FaArrowLeftLong />
+            </button>
+            <button
+              onClick={nextSlide}
+              disabled={currentIndex + cardsPerSlide >= clients.length}
+            >
+              <FaArrowRight />
+            </button>
+          </div>
+        )}
        </div>
        <div className="slider">
          {visibleCards.map((card) => (

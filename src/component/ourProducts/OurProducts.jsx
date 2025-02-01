@@ -62,12 +62,19 @@ const OurProducts = () => {
     <div className="ourProductsSection" id="products">
     <div className="top-section">
       <div className="title">منتجاتنا</div>
-      <div className="buttons">
-        <button onClick={prevSlide}><FaArrowLeftLong />
-        </button>
-        <button onClick={nextSlide}> <FaArrowRight />
-        </button>
-      </div>
+      {cards.length > cardsPerSlide && (
+                <div className="buttons">
+                  <button onClick={prevSlide} disabled={currentIndex === 0}>
+                    <FaArrowLeftLong />
+                  </button>
+                  <button
+                    onClick={nextSlide}
+                    disabled={currentIndex + cardsPerSlide >= cards.length}
+                  >
+                    <FaArrowRight />
+                  </button>
+                </div>
+              )}
     </div>
     <div className="slider">
       {visibleCards.map((card) => (

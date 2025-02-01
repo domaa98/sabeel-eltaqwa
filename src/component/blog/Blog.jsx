@@ -53,12 +53,19 @@ const Blog = () => {
      <div className="blogSection" id='blog'>
         <div className="top-section">
           <div className="title">المدونة</div>
+          {cards.length > cardsPerSlide && (
           <div className="buttons">
-            <button onClick={prevSlide}><FaArrowLeftLong />
+            <button onClick={prevSlide} disabled={currentIndex === 0}>
+              <FaArrowLeftLong />
             </button>
-            <button onClick={nextSlide}> <FaArrowRight />
+            <button
+              onClick={nextSlide}
+              disabled={currentIndex + cardsPerSlide >= cards.length}
+            >
+              <FaArrowRight />
             </button>
           </div>
+        )}
         </div>
         <div className="slider">
           {visibleCards.map((card) => (

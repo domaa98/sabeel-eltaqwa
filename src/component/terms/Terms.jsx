@@ -9,8 +9,8 @@ const Terms = () => {
       <a href="#">Cookies</a>
     </div>
     <div className="right-text">
-      &copy; 2024 جميع الحقوق محفوظة
-    </div>
+        &copy; {new Date().getFullYear()} جميع الحقوق محفوظة
+      </div>
   </footer>
   )
 }
