@@ -43,7 +43,7 @@
     border-radius: 16px;
     position: absolute;
     top: 500px;
-    left: 80px;
+    left: 5%;
 }
 .rightImage{
     width: 220px;
@@ -60,34 +60,107 @@
         height: 125px;
         font-size: 30px;
     }
-    .leftImage{
-        display: none;
+    .mainImage {
+        height: 415px;
+        top: 255px;
     }
-    .rightImage{
-        display: none;
+     .rightImage {
+        width: 155px;
+        height: 200px;
+        top: 211px;
+        right: 16px;
     }
+    .leftImage {
+        width: 155px;
+        height: 200px;
+        top: 525px;
+        left: 16px;
+    }
+  
 }
 @media (max-width: 750px){
-    .bannerSectionText h3{
-        width: 500px;
-        height: 125px;
-        font-size: 25px;
+    .mainImage {
+        height: 344px;
+        top: 255px;
+    }
+     .rightImage {
+        width: 119px;
+        height: 152px;
+        top: 211px;
+        right: 16px;
+    }
+    .leftImage {
+        width: 141px;
+        height: 166px;
+        top: 500px;
+        left: 16px;
+    }
+    .bannerSectionText h3 {
+        width: 444px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    .bannerSection{
+        height: 700px;
     }
 }
 @media (max-width: 525px){
-    .bannerSectionText h3{
-        width: 400px;
-        height: 125px;
-        font-size: 18px;
+    .mainImage {
+        height: 344px;
+        top: 255px;
+    }
+     .rightImage {
+        width: 119px;
+        height: 152px;
+        top: 211px;
+        right: 16px;
+    }
+    .leftImage {
+        width: 141px;
+        height: 166px;
+        top: 500px;
+        left: 16px;
+    }
+    .bannerSectionText h3 {
+        width: 385px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    .bannerSection{
+        height: 700px;
     }
 }
 @media (max-width: 420px){
-    .bannerSectionText h3{
-        width: 250px;
-        height: 125px;
-        font-size: 17px;
-    }
+   
     .bannerSectionText{
         padding-top: 40px;
      }
+
+     .mainImage {
+        height: 344px;
+        top: 255px;
+    }
+     .rightImage {
+        width: 119px;
+        height: 152px;
+        top: 211px;
+        right: 16px;
+    }
+    .leftImage {
+        width: 141px;
+        height: 166px;
+        top: 500px;
+        left: 16px;
+    }
+    .bannerSectionText h3 {
+        width: 334px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    .bannerSection{
+        height: 700px;
+    }
 }

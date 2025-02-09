@@ -25,12 +25,15 @@
   }
   
  
-  @media (max-width: 570px) {
+  @media (max-width: 600px) {
     .terms{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
         height: 70px;
+      }
+      .terms .right-text{
+        width: 200px;
       }
   }

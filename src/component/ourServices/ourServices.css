@@ -18,14 +18,12 @@
   }
   
 .ourServicesSection .cards-container {
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    gap: 1rem;
+    gap: 20px;
     width: 100%;
-    max-width: 1200px;
   }
   
   .ourServicesSection .card {
@@ -36,9 +34,8 @@
     background-color: #F9FAFB;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
-    gap: 15px;
-    width: 250px;
-
+    gap: 20px;
+    width: 23%;
 }
   
   .ourServicesSection .card-image {
@@ -56,10 +53,16 @@
     text-align: right;
   }
 
+
+  @media (max-width: 1110px) {
+    .ourServicesSection .card {
+      width: 31%;
+  }
+  }
   @media (max-width: 700px) {
 
     .ourServicesSection {
-        margin:150px 80px;
+        margin:70px 80px;
       }
 
       .ourServicesSection .section-title {
@@ -73,7 +76,7 @@
 
   }
 
-  @media (max-width: 698px) {
+  @media (max-width: 810px) {
   .ourServicesSection .card {
     width: 100%;
 }
@@ -82,9 +85,8 @@
   @media (max-width: 601px) {
 
     .ourServicesSection {
-        margin-right:40px;
-        margin-left:40px;
-        margin-top: 1250px;
+        margin-right:16px;
+        margin-left:16px;
       }
 
       .ourServicesSection .section-title {
@@ -95,5 +97,7 @@
         font-size: 16px;
       }
 
-
+      .ourServicesSection .card {
+        width: 100%;
+    } 
   }

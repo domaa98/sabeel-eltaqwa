@@ -1,5 +1,4 @@
 .ourProductsSection {
-    height: 485px;
     margin: 0 80px;
   }
   
@@ -11,7 +10,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
  
-   /* flex-wrap: wrap; /* Make sure items wrap on small screens */
   }
   
   .ourProductsSection .title {
@@ -33,9 +31,10 @@
   
   .ourProductsSection .slider {
     display: flex;
-    /*justify-content: space-between;
-    flex-wrap: wrap;*/
-    /*gap: 20px; /* Add gap between cards */
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 16px; 
   }
   
   .ourProductsSection .card {
@@ -91,10 +90,10 @@
   
   
   /* Mobile Devices */
-  @media (max-width: 600px) {
+  @media (max-width: 641px) {
 
     .ourProductsSection {
-      margin: 0 40px;
+      margin: 0 16px;
     }
     .ourProductsSection .top-section {
       flex-direction: row-reverse;
@@ -102,7 +101,8 @@
     }
   
     .ourProductsSection .title {
-      font-size: 20px;
+      font-size: 24px;
+      font-weight: 700;
     }
   
     .ourProductsSection .buttons {
@@ -123,12 +123,13 @@
     }
   
     .ourProductsSection .slider {
-      flex-direction: column;
+      flex-direction: row-reverse;
       align-items: center;
+      flex-wrap: wrap;
     }
   
     .ourProductsSection .card {
-      width: 100%;
+      width: 47%;
       margin-bottom: 20px;
     }
   }
@@ -137,11 +138,12 @@
   @media (min-width: 601px) and (max-width: 1024px) {
     .ourProductsSection .slider {
         flex-direction: row;
-        gap: 24px;
+        flex-direction: row-reverse;
+        gap: 16px;
       }
     
       .ourProductsSection .card {
-        width: 23%; /* 4 cards per row */
+        width: 31%; 
       }
     
       .ourProductsSection .buttons {
@@ -166,11 +168,12 @@
   @media (min-width: 1025px) {
     .ourProductsSection .slider {
       flex-direction: row;
-      gap: 24px;
+      flex-direction: row-reverse;
+      gap: 16px;
     }
   
     .ourProductsSection .card {
-      width: 23%; /* 4 cards per row */
+      width: 15%; 
     }
   
     .ourProductsSection .buttons {

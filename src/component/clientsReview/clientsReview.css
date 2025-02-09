@@ -33,8 +33,7 @@
   .ourClientsReview .slider {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
   }
   
   .ourClientsReview .card {
@@ -42,7 +41,7 @@
     flex-direction: row-reverse;
     text-align: right;
     border-radius: 10px;
-    width: fit-content;
+    width: 416px;
     height: 125px;
     gap: 14px;
     background-color: #F2F4F7;
@@ -50,8 +49,8 @@
   }
  
   .ourClientsReview .card .card-image {
-    width: 90px;
-    height: 90px;
+    width: 118px;
+    height: 110px;
     object-fit: cover; 
     border-radius: 8px;
     background-color: #EFF2F5;
@@ -100,22 +99,12 @@
     transition: ease-in-out 0.2s;
   }
   
-
-  @media (max-width: 450px) {
-    .ourClientsReview {
-      margin: 20px 30px;
-    }
-    .ourClientsReview .card-content .rate .clientRate {
-      color: rgb(213, 213, 6);
-      font-size: 12px;
-  }
-  }
   
   /* Mobile Devices */
   @media (max-width: 600px) {
     .ourClientsReview {
-      height: 530px;
-    }
+      margin: 30px 16px;  
+      }
     .ourClientsReview .top-section {
       flex-direction: row-reverse;
       align-items: flex-start;
@@ -143,48 +132,43 @@
     }
   
     .ourClientsReview .slider {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row-reverse;
+      gap: 16px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
     }
   
     .ourClientsReview .card {
-      width: fit-content;
-      margin-bottom: 20px;
-      display: flex;
+      display: flex ;
       align-items: center;
-      justify-content: center;
+      justify-content: center; 
       padding: 8px;
+      width: 407px;
+      
     }
-    .ourClientsReview .card .card-image {
-      width: 90px;
-      height: 100px;
-    }
-    .ourClientsReview .card-content p {
-      font-size: 13px;
-      width: 150px;
-  }
-  ourClientsReview .card-content .rate {
-    flex-direction: column;
-}
   }
   
   /* Tablets */
   @media (min-width: 906px) and (max-width: 1024px) {
-    .ourClientsReview {
-      height: 330px;
-    }
+   
     .ourClientsReview .slider {
+      flex-direction: row-reverse;
+      gap: 16px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+
+    }
+  
+    .ourClientsReview .card {
+      display: flex ;
       align-items: center;
-      justify-content: center;
-      }
-    
-      .ourClientsReview .card {
-        display: flex ;
-        width: fit-content;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-      }
+      justify-content: center; 
+      padding: 8px;
+      width: 407px;
+      
+    }
     
       .ourClientsReview .buttons {
         display: flex;
@@ -202,28 +186,27 @@
         border: none;
         cursor: pointer;
       }
-      .ourClientsReview .card .card-image {
-        width: 100px;
-        height: 90px;
-      }
+    
   }
 
   @media (min-width: 601px) and (max-width: 906px) {
-    .ourClientsReview {
-      height: 500px;
-    }
+   
     .ourClientsReview .slider {
+      flex-direction: row-reverse;
+      gap: 16px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+    }
+  
+    .ourClientsReview .card {
+      display: flex ;
       align-items: center;
-      justify-content: center;
-      }
-    
-      .ourClientsReview .card {
-        display: flex ;
-        width: fit-content;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-      }
+      justify-content: center; 
+      padding: 8px;
+      width: 407px;
+      
+    }
     
       .ourClientsReview .buttons {
         display: flex;
@@ -240,28 +223,30 @@
         outline: none;
         border: none;
         cursor: pointer;
-      }
-      .ourClientsReview .card .card-image {
-        width: 100px;
-        height: 90px;
       }
   }
   
   /* Desktops */
   @media (min-width: 1025px) {
     .ourClientsReview {
-      height: 330px;
+      height: 275px;
     }
     .ourClientsReview .slider {
       flex-direction: row-reverse;
+      gap: 16px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+
     }
   
     .ourClientsReview .card {
       display: flex ;
-      width: fit-content;
       align-items: center;
       justify-content: center; 
       padding: 8px;
+      width: 407px;
+      
     }
   
     .ourClientsReview .buttons {

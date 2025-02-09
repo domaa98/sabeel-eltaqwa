@@ -1,6 +1,5 @@
 .footer {
     text-align: center;
-    padding: 1rem;
     background-color: #fff;
     margin: 20px 0;
   }
@@ -15,7 +14,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 27px;
     flex-direction: row-reverse;
   }
   
@@ -24,14 +23,35 @@
     font-weight: bold;
     color: #000;
     transition: color 0.3s;
+    font-size: 20px;
+    font-weight: 700;
   }
   
   .footer-nav a:hover {
     color: #007bff;
   }
 
-  @media (max-width: 440px){
-    .footer-nav ul {
-        flex-direction:column;
-      }
+  @media (max-width: 600px){
+    .footer {
+      margin: 20px 16px;
+    }
+    .footer-logo {
+      max-width: 102px;
+    }
+    .footer-nav a {
+     font-size: 20px;
+     font-weight: 700;
+    }
+    .footer-nav a[href="#main"] {
+      display: none;
+  
+     }
+     
+     .footer-nav ul {
+     
+      justify-content: space-between;
+      gap: 0;
+     
+    }
+    
   }
