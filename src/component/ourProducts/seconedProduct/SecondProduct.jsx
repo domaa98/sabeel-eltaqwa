@@ -21,7 +21,7 @@ const cardData = [
 
 function SecondProduct() {
   return (
-    <div className='SecondProduct'>
+    <div className='SecondProduct' id='draperies'>
       <div className="SecondProductImages">
               <img src={img1} alt="image" className="SecondProductImage1" />
             </div>
@@ -40,7 +40,7 @@ function SecondProduct() {
                   </div>
                 ))}
               </div>
-              <button className="button">اطلب الًان</button>
+              <a href="#Contact_us" className="button">اطلب الًان</a>
             </div>
     </div>
   )

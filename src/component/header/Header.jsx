@@ -3,14 +3,22 @@ import './header.css';
 import { AiOutlineMenu } from "react-icons/ai";
 import { TfiClose } from "react-icons/tfi";
 import logo from '../../assets/logo.svg'
+import { IoIosArrowDown } from "react-icons/io";
+
 
 
 const Header = () => {
 
 
   const [openMenu, setOpenMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -28,7 +36,20 @@ const Header = () => {
           <div className="links">
             <a href="#main">الرئيسية</a>
             <a href="#who">من نحن</a>
-            <a href="#products">منتجاتنا</a>
+
+            <div className='dropDownArrow' onClick={toggleDropdown}> 
+            <IoIosArrowDown />
+            <a href="#product">منتجاتنا</a>
+
+            <div className="dropDownList"
+             style={{
+              display: isOpen ? 'flex' : 'none',
+              }}>
+              <a href="#freezers">قسم المجمدات</a>
+              <a href="#draperies">قسم الأقمشة</a>
+            </div>
+            </div>
+
             <a href="#blog">المدونة</a>
           </div>
 
@@ -47,7 +68,6 @@ const Header = () => {
             <a href="#main">الرئيسية</a>
             <a href="#who">من نحن</a>
             <a href="#products">منتجاتنا</a>
-            <a href="#services">خدماتنا</a>
             <a href="#blog">المدونة</a>
 
           </div>

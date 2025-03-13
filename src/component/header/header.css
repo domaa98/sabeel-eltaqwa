@@ -71,6 +71,45 @@ a {
     text-align: center;
   }
 
+  .dropDownArrow{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  a[href="#product"]{
+    padding-left: 5px ;
+  }
+  .dropDownArrow .dropDownList{
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 200px;
+    height: 90px;
+    top: 35px;
+    z-index: 33;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    transition:all ease-in-out 0.2s;
+  }
+
+  .dropDownArrow .dropDownList a{
+    border-radius: 8px;
+    padding: 6px 12px;
+    width: 175px;
+    text-align: right;
+  }
+
+  .dropDownArrow .dropDownList a:hover{
+    background-color: #2071B9;
+    color: white;
+  }
+
   .links-drop-down {
     display: none;
   }

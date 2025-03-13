@@ -20,7 +20,7 @@ const cardData = [
 
 function FirstProduct() {
   return (
-    <div className="firstProduct">
+    <div className="firstProduct" id="freezers">
       <div className="firstProductImages">
         <img src={img1} alt="image" className="firstProductImage1" />
         <img src={img2} alt="image" className="firstProductImage2" />
@@ -41,7 +41,7 @@ function FirstProduct() {
             </div>
           ))}
         </div>
-        <button className="button">اطلب الًان</button>
+        <a href="#Contact_us" className="button" >اطلب الًان</a>
       </div>
     </div>
   );
