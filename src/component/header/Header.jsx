@@ -45,8 +45,8 @@ const Header = () => {
              style={{
               display: isOpen ? 'flex' : 'none',
               }}>
-              <a href="#freezers">قسم المجمدات</a>
-              <a href="#draperies">قسم الأقمشة</a>
+              <a href="#freezers">قطاع الدواجن المجمدة</a>
+              <a href="#draperies">قطاع الأقمشة للمفروشات</a>
             </div>
             </div>
 

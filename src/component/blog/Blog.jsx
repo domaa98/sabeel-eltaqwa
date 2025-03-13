@@ -7,12 +7,12 @@ import img4 from "../../assets/pl1.png"
 const firstBlog = [
   {
     id: 1,
-    title: "كيفية اختيار الدواجن المجمدة بأفضل جودة",
+    title: "أهمية التخزين الآمن للدواجن المجمدة",
     paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
     image: img1,
   },
   { id: 2,
-     title: "أهمية التخزين الآمن للدواجن المجمدة",
+     title: "كيفية اختيار الدواجن المجمدة بأفضل جودة",
      paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
      image: img2 ,
     }
@@ -21,12 +21,13 @@ const firstBlog = [
 const secondBlog = [
     {
       id: 1,
-      title: "أفضل الأقمشة لديكورات المنزل العصري",
+      title: "نصائح للعناية بأقمشة المفروشات",
       paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
       image: img3,
     },
-    { id: 2,
-       title: "نصائح للعناية بأقمشة المفروشات",
+    {
+       id: 2,
+       title: "أفضل الأقمشة لديكورات المنزل العصري",
        paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
        image: img4, 
       }
@@ -46,7 +47,7 @@ function Blog() {
             <div className="card" key={card.id}>
               <img src={card.image} alt={card.title} className="card-image" />
               <h2 className="card-title">{card.title}</h2>
-              <p className="cardText">{card.paragraph}</p>
+              {/*<p className="cardText">{card.paragraph}</p> */}
             </div>
           ))}
         </div>
@@ -58,7 +59,7 @@ function Blog() {
             <div className="card" key={card.id}>
               <img src={card.image} alt={card.title} className="card-image" />
               <h2 className="card-title">{card.title}</h2>
-              <p className="cardText">{card.paragraph}</p>
+              {/*<p className="cardText">{card.paragraph}</p> */}
             </div>
           ))}
         </div>

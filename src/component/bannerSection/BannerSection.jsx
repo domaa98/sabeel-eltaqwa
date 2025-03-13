@@ -8,7 +8,7 @@ function BannerSection() {
     <div className='bannerSection' id='main'>
 
         <div className="bannerSectionText">
-            <h3>مرحباً بكم في مؤسسة سبيل التقوى، عالم الغذاء الآمن والمتميز حيث الجودة تلتقي بالثقة</h3>
+            <h3>سبيل التقوى، حلول تجارة الجملة في قطاعي الأغذية وأقمشة المفروشات</h3>
         </div>
 
         <div className="lineVector">
