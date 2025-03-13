@@ -1,7 +1,7 @@
 import './bannerSection.css'
 import mainImage from '../../assets/hero.jpeg'
-import leftImage from '../../assets/banner2.jpg'
-import rightImage from '../../assets/banner3.jpg'
+import leftImage from '../../assets/pl4.png'
+import rightImage from '../../assets/ch4.jpg'
 import line from '../../assets/line.svg'
 function BannerSection() {
   return (

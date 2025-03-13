@@ -1,7 +1,7 @@
 .footer {
-    text-align: center;
+    text-align: right;
     background-color: #fff;
-    margin: 20px 0;
+    margin: 20px 80px;
   }
   
   .footer-logo {
@@ -9,11 +9,16 @@
     margin-bottom: 1rem;
   }
   
+  .footerParagraph{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0;
+  }
+
   .footer-nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
     gap: 27px;
     flex-direction: row-reverse;
   }
@@ -42,16 +47,7 @@
      font-size: 20px;
      font-weight: 700;
     }
-    .footer-nav a[href="#main"] {
-      display: none;
-  
-     }
-     
-     .footer-nav ul {
-     
-      justify-content: space-between;
-      gap: 0;
-     
-    }
-    
+    .footer-nav ul {
+      gap: 15px;
+  }
   }

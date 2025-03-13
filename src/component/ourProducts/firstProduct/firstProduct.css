@@ -1,0 +1,194 @@
+.firstProduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 80px;
+
+}
+
+.firstProduct .firstProductImages{
+    width: 60%;
+    height: 534px;
+    position: relative;
+}
+.firstProductImages .firstProductImage1{
+    width: 85%;
+    height: 350px ;
+    border-radius: 16px;
+    margin-left: 40px;
+}
+.firstProductImages .firstProductImage2{
+    width: 40%;
+    height: 175px ;
+    border-radius: 16px;
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+
+
+.firstProduct .firstProductDetails{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 620px;
+    gap: 46px;
+}
+
+.firstProductDetails .title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.firstProductDetails .mainText{
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 44px;
+}
+
+
+/*cards style*/
+
+.firstProductDetails .cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .firstProductDetails .card {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+    background-color: #EFF2F5;
+    border: 1px solid #e5e7eb;
+    gap: 20px;
+    width: 48%;
+}
+  
+  .firstProductDetails .card-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 12px;
+    object-fit: cover;
+    background-color: #2071B9;
+  }
+  
+  .firstProductDetails .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-align: right;
+  }
+
+  .firstProductDetails .cardText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: right;
+    line-height: 24px;
+  }
+
+
+  .firstProductDetails .button {
+    padding: 10px 15px;    
+    background-color: #2071B9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 44px;
+  }
+  
+  .firstProductDetails .button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+  /*media query*/
+
+  @media (max-width: 1144px) {
+
+    .firstProductDetails .title{
+      font-size: 35px;
+  }
+  .firstProductDetails .mainText{
+      font-size: 20px;
+  }
+  
+  /*cards style*/
+   
+    .firstProductDetails .card {
+
+      width: 47%;
+  }
+
+  }
+
+  @media (max-width: 960px) {
+
+    .firstProduct{
+      margin: 10px 50px;
+  }
+
+    .firstProductDetails .title{
+      font-size: 30px;
+  }
+  .firstProductDetails .mainText{
+      font-size: 18px;
+      line-height: 30px;
+  }
+  
+  /*cards style*/
+   
+    .firstProductDetails .card {
+
+      width: 47%;
+  }
+
+  }
+
+
+  @media (max-width: 850px) {
+    .firstProduct{
+      margin: 10px 50px;
+      flex-direction: column;
+  }
+  .firstProduct .firstProductImages{
+    width: 100%;
+}
+
+  .firstProduct .firstProductDetails {
+    width: 100%;
+    gap: 40px;
+}
+
+  }
+
+  @media (max-width: 452px) {
+    .firstProduct .firstProductImages{
+      width: 100%;
+  }
+    .firstProduct{
+      margin: 10px 16px;
+  }
+    .firstProductDetails .card {
+       width: 100%; 
+  }
+
+  .firstProductDetails .title{
+    font-size: 26px;
+}
+.firstProductDetails .mainText{
+    font-size: 18px;
+    line-height: 30px;
+}
+  }

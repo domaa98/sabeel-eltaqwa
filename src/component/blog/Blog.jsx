@@ -1,88 +1,69 @@
 import './blog.css'
+import img1 from "../../assets/ch2.png"
+import img2 from "../../assets/ch3.png"
+import img3 from "../../assets/pl2.png"
+import img4 from "../../assets/pl1.png"
 
-import blog1 from '../../assets/blog1.jpg'
-import blog2 from '../../assets/blog2.jpg'
-import blog3 from '../../assets/blog3.jpg'
-import { useState } from 'react';
-import { FaArrowLeftLong, FaArrowRight } from 'react-icons/fa6';
+const firstBlog = [
+  {
+    id: 1,
+    title: "كيفية اختيار الدواجن المجمدة بأفضل جودة",
+    paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
+    image: img1,
+  },
+  { id: 2,
+     title: "أهمية التخزين الآمن للدواجن المجمدة",
+     paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
+     image: img2 ,
+    }
+];
 
-const cards = [
+const secondBlog = [
     {
       id: 1,
-      image: blog3,
-      title: 'الاتجاهات في السوق الغذائية والوصفات الغذائية',
-      description: 'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف',
+      title: "أفضل الأقمشة لديكورات المنزل العصري",
+      paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
+      image: img3,
     },
-    {
-      id: 2,
-      image: blog2,
-      title: 'أهمية الأمن الغذائي في المملكة',
-      description: 'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
-    },
-    {
-      id: 3,
-      image: blog1,
-      title: 'أفضل الطرق لاختيار الأطعمة الطازجة',
-      description: 'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
-     },
-    
+    { id: 2,
+       title: "نصائح للعناية بأقمشة المفروشات",
+       paragraph:'الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم. الفريق متعاون جداً، والمنتجات دائماً طازجة ومطابقة للوصف. أشعر بالثقة في التعامل معكم',
+       image: img4, 
+      }
   ];
 
-
-const Blog = () => {
-
-     const cardsPerSlide = 3;
-        const [currentIndex, setCurrentIndex] = useState(0);
-      
-        const nextSlide = () => {
-          if (currentIndex + cardsPerSlide < cards.length) {
-            setCurrentIndex(currentIndex + cardsPerSlide);
-          }
-        };
-      
-        const prevSlide = () => {
-          if (currentIndex - cardsPerSlide >= 0) {
-            setCurrentIndex(currentIndex - cardsPerSlide);
-          }
-        };
-    
-        const visibleCards = cards.slice(currentIndex, currentIndex + cardsPerSlide);
-    
-
+function Blog() {
   return (
-     <div className="blogSection" id='blog'>
-        <div className="top-section">
-          <div className="title">المدونة</div>
-          {cards.length > cardsPerSlide && (
-          <div className="buttons">
-            <button onClick={prevSlide} disabled={currentIndex === 0}>
-              <FaArrowLeftLong />
-            </button>
-            <button
-              onClick={nextSlide}
-              disabled={currentIndex + cardsPerSlide >= cards.length}
-            >
-              <FaArrowRight />
-            </button>
-          </div>
-        )}
-        </div>
-        <div className="slider">
-          {visibleCards.map((card) => (
-            <div key={card.id} className="card">
-              <img
-              className="card-image"
-                src={card.image}
-                alt={card.title}
-              />
-              <div className="card-content">
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
-              </div>
+    <div className='blog' id='blog'>
+
+        <h2 className="blogTitle">تعرف على المزيد من عالم تجارة اللحوم المجمدة وأقمشة المفروشات</h2>
+
+        <h4 className="blogCardTitle">قسم اللحوم والدواجن المجمدة</h4>
+
+        <div className="blogCards">
+            
+          {firstBlog.map((card) => (
+            <div className="card" key={card.id}>
+              <img src={card.image} alt={card.title} className="card-image" />
+              <h2 className="card-title">{card.title}</h2>
+              <p className="cardText">{card.paragraph}</p>
             </div>
           ))}
         </div>
-      </div>
+
+        <h4 className="blogCardTitle">قسم الأقمشة للمفروشات</h4>
+        <div className="blogCards">
+
+          {secondBlog.map((card) => (
+            <div className="card" key={card.id}>
+              <img src={card.image} alt={card.title} className="card-image" />
+              <h2 className="card-title">{card.title}</h2>
+              <p className="cardText">{card.paragraph}</p>
+            </div>
+          ))}
+        </div>
+      
+    </div>
   )
 }
 

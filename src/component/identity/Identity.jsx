@@ -1,6 +1,6 @@
 import "./identity.css";
 import identity1 from "../../assets/identity1.jpg";
-import identity2 from "../../assets/identity2.jpg";
+import identity2 from "../../assets/pillow.png";
 import identity3 from "../../assets/identity3.jpg";
 
 function Identity() {
@@ -18,14 +18,10 @@ function Identity() {
         <h4 className="subtitle">من نحن</h4>
         <h2 className="main-title">نبذة تفصيلية عن المؤسسة</h2>
         <p className="paragraph">
-          نحن مؤسسة لتجارة المواد الغذائية، بدـأنا مشوارنا عام (2024) من عاصمة
-          المملكة العربية السعودية الرياض واضعين نُصب أعيننا هدفاً واضحاً لنكون
-          واحدة من الرواد في مجال تجارة المواد الغذائية، تماشياً مع رؤية المملكة
-          2030 ومستهدفاتها الطموحة، بفضل التزامنا بالجودة واتباع أعلى معايير
-          سلامة الغذاء<a href="#ourVision" className="specialFont" > ...عرض المزيد</a>
+        سبيل التقوى شركة رائدة في مجال تجارة الجملة، تقدم منتجاتنا من قطاعي الدواجن المجمدة، وكذلك الأقمشة الخاصة بالمفروشات، نلتزم بتقديم الجودة التي يستحقها عملائنا في المملكة والخليج{/* <a href="#ourVision" className="specialFont" > ...عرض المزيد</a>*/}
         </p>
 
-        <h2 className="main-title" id="ourVision">رؤيتنا</h2>
+        {/*<h2 className="main-title" id="ourVision">رؤيتنا</h2>
         <p className="paragraph">
           من خلال تقديم منتجات غذائية عالية الجودة، وبطرقٍ آمنةٍ نساهم في تحقيق
           الأمن الغذائي والوفاء بتطلعات عملائنا، ونلتزم بأن نكون واحدة من أفضل
@@ -45,7 +41,7 @@ function Identity() {
           نعمل على تحقيق السهولة والسلاسة والجودة في جميع أنواع المواد الغذائية
           من خلال تطبيق أعلى معايير سلامة الغذاء، لتقديم علامات تجارية جديرة
           بالثقة تلبي احتياجات العملاء
-        </p>
+        </p> */} 
       </div>
     </section>
   );

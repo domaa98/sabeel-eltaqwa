@@ -1,0 +1,193 @@
+.SecondProduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 80px;
+    flex-direction: row-reverse;
+
+}
+
+.SecondProduct .SecondProductImages{
+    width: 60%;
+    height: 534px;
+    position: relative;
+}
+.SecondProductImages .SecondProductImage1{
+    width: 85%;
+    height: 400px ;
+    border-radius: 16px;
+    display: block;
+  margin-left: auto;
+}
+
+
+.SecondProduct .SecondProductDetails{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 620px;
+    gap: 46px;
+}
+
+.SecondProductDetails .title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.SecondProductDetails .mainText{
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 44px;
+}
+
+
+/*cards style*/
+
+.SecondProductDetails .cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .SecondProductDetails .card {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+    background-color: #EFF2F5;
+    border: 1px solid #e5e7eb;
+    gap: 20px;
+    width: 48%;
+}
+  
+  .SecondProductDetails .card-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 12px;
+    object-fit: cover;
+    background-color: #2071B9;
+  }
+  
+  .SecondProductDetails .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-align: right;
+  }
+
+  .SecondProductDetails .cardText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: right;
+    line-height: 24px;
+  }
+
+
+  .SecondProductDetails .button {
+    padding: 10px 15px;    
+    background-color: #2071B9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 44px;
+  }
+  
+  .SecondProductDetails .button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+  /*media query*/
+
+  @media (max-width: 1144px) {
+
+    .SecondProductDetails .title{
+      font-size: 35px;
+  }
+  .SecondProductDetails .mainText{
+      font-size: 20px;
+  }
+  
+  /*cards style*/
+   
+    .SecondProductDetails .card {
+
+      width: 47%;
+  }
+
+  }
+
+  @media (max-width: 960px) {
+
+    .SecondProduct{
+      margin: 50px 50px;
+  }
+
+    .SecondProductDetails .title{
+      font-size: 30px;
+  }
+  .SecondProductDetails .mainText{
+      font-size: 18px;
+      line-height: 30px;
+  }
+  
+  /*cards style*/
+   
+    .SecondProductDetails .card {
+
+      width: 47%;
+  }
+
+  }
+
+
+  @media (max-width: 850px) {
+    .SecondProduct{
+      margin: 50px 50px;
+      flex-direction: column;
+  }
+  .SecondProduct .SecondProductImages{
+    width: 100%;
+    margin-top: 50px;
+}
+
+  .SecondProduct .SecondProductDetails {
+    width: 100%;
+    gap: 40px;
+}
+.SecondProductImages .SecondProductImage1 {
+    width: 100%;
+}
+
+  }
+
+  @media (max-width: 452px) {
+    .SecondProduct .SecondProductImages{
+      width: 100%;
+      margin-top: 50px;
+  }
+    .SecondProduct{
+      margin: 10px 16px;
+  }
+    .SecondProductDetails .card {
+       width: 100%; 
+  }
+
+  .SecondProductDetails .title{
+    font-size: 26px;
+}
+.SecondProductDetails .mainText{
+    font-size: 18px;
+    line-height: 30px;
+}
+  }

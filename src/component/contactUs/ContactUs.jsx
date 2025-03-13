@@ -51,8 +51,8 @@ const ContactUs = () => {
       </div>
       <div className="section form-section">
 
-        <p className='first-title'>لسهولة الاتصال الفوري مع المؤسسة</p>
-        <p className='second-title'>تواصل معنا لمعرفة كيف يمكننا أن نكون جزءًا من نجاحك</p>
+        <p className='first-title'>تواصل معنا الآن واحصل على منتجات موثوقة في قطاعي الأغذية وأقمشة المفروشات</p>
+        <p className='second-title'>تواصل معنا للحصول على منتجات الدواجن المجمدة أو أقمشة المفروشات</p>
         <form ref={form} onSubmit={handleSubmit} className='contactForm'>
           <div>
             <label htmlFor="name">الاسم بالكامل</label>
@@ -76,6 +76,16 @@ const ContactUs = () => {
               required
             />
           </div>
+
+          <div className='selectionOption'>
+            <label htmlFor="productType">اختر نوع المنتج</label>
+            <select id="productType" name="productType">
+               <option disabled selected>اختر نوع المنتج</option>
+               <option value="قسم اللحوم والدواجن المجمدة">قسم اللحوم والدواجن المجمدة</option>
+               <option value="قسم الأقمشة للمفروشات">قسم الأقمشة للمفروشات</option>
+             </select>
+          </div>
+
           <div>
             <label htmlFor="message">طلبك</label>
             <textarea

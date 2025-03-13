@@ -29,7 +29,6 @@ const Header = () => {
             <a href="#main">الرئيسية</a>
             <a href="#who">من نحن</a>
             <a href="#products">منتجاتنا</a>
-            <a href="#services">خدماتنا</a>
             <a href="#blog">المدونة</a>
           </div>
 
